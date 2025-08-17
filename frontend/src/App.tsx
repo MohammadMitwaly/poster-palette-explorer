@@ -17,7 +17,7 @@ export default function App() {
   const [displayCols, setDisplayCols] = useState<number>(5);
 
   useEffect(() => {
-    fetch("/posters.json").then((r) => r.json()).then(setData);
+    fetch("./posters.json").then((r) => r.json()).then(setData);
   }, []);
 
   // Mirror the analysis layout by default
