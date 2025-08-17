@@ -1,5 +1,7 @@
 # Poster Palette Explorer
 
+![App screenshot](docs/Screenshot 2025-08-17 101131.png)
+
 A project that analyzes movie poster color palettes and creates a beautiful interactive visualization. Takes your favorite movies, fetches poster images via the TMDb API, analyzes color motifs, and displays them in a smooth grid layout with dynamic background gradients.
 
 ## Features
