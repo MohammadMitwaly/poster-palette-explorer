@@ -78,3 +78,4 @@ frontend/coverage/
 
 # Relevant to my loca env only
 windsurf-launcher.sh
+*Zone.Identifier
