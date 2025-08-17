@@ -1,0 +1,80 @@
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# --- Root env files (also picked up by analysis or tooling) ---
+.env
+.env.local
+.env.*.local
+
+# --- Python (analysis/) ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+analysis/.venv/
+analysis/venv/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Python caches and tooling
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pylint.d/
+.coverage
+coverage/
+htmlcov/
+.cache/
+.ipynb_checkpoints/
+
+# Analysis outputs (keep input CSVs tracked)
+analysis/output/
+analysis/cache/
+analysis/posters/
+analysis/data/
+!analysis/input/movies.csv
+
+# --- Node / Vite (frontend/) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+# Vite cache inside node_modules
+frontend/node_modules/.vite/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Coverage (frontend/testing)
+frontend/coverage/
+
+# Misc
+*.local
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Relevant to my loca env only
+windsurf-launcher.sh
