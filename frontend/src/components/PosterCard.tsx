@@ -26,7 +26,7 @@ export default function PosterCard({ item }: { item: PosterItem }) {
       transition={{ type: "spring", stiffness: 300, damping: 25 }}
     >
       <img src={item.poster_url} alt={item.title} className="w-full aspect-[2/3] object-cover" loading="lazy" />
-      <div className="p-3 flex items-center justify-between gap-2">
+      <div className="p-3 md:p-4 flex items-center justify-between gap-3">
         <div className="min-w-0">
           <div className="text-sm font-medium truncate" title={item.title}>
             {item.title}
@@ -43,7 +43,10 @@ export default function PosterCard({ item }: { item: PosterItem }) {
             ))}
           </div>
         </div>
-        <HueChart histogram={item.hue_histogram} />
+        <div className="shrink-0">
+          {/* Default HueChart size now 72px */}
+          <HueChart histogram={item.hue_histogram} />
+        </div>
       </div>
     </motion.div>
   );
